@@ -25,7 +25,7 @@ class ColourDetector:
         self.target_colour = rospy.get_param('~target_colour', '').lower()
 
         rospy.loginfo('TASK 4 BEACON: %s', self.target_colour)
-        self.path = rp.get_path('com2009_team') + '/snaps/'
+        self.path = rp.get_path('com2009_team26') + '/snaps/'
         self.image_sub = rospy.Subscriber('/camera/rgb/image_raw', Image, self.image_callback)
         
     def image_callback(self, msg):

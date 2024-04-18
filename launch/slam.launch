@@ -10,5 +10,5 @@
 
     <!-- RViZ -->
     <node pkg="rviz" type="rviz" name="rviz" required="true"
-          args="-d $(find com2009_team)/rviz/slam.rviz"/>
+          args="-d $(find com2009_team26)/rviz/slam.rviz"/>
 </launch>

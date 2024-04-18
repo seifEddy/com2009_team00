@@ -3,12 +3,12 @@
 
     <!-- Colour detection part -->
     <arg name="target_colour" default=""/>
-    <node name="detect_colour" pkg="com2009_team" type="detect_colour.py"  output="screen" respawn="false">
+    <node name="detect_colour" pkg="com2009_team26" type="detect_colour.py"  output="screen" respawn="false">
         <param name="target_colour" value="$(arg target_colour)"/>
     </node>
 
     <!-- SLAM, and exploration part -->
-    <!-- <include file="$(find com2009_team)/launch/slam.launch"/> -->
-    <include file="$(find com2009_team)/launch/explore.launch"/>
+    <!-- <include file="$(find com2009_team26)/launch/slam.launch"/> -->
+    <include file="$(find com2009_team26)/launch/explore.launch"/>
     
 </launch>
