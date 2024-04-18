@@ -1,0 +1,3 @@
+local_costmap:
+  inflation_radius: 0.5
+  cost_scaling_factor: 1.5
