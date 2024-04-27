@@ -2,6 +2,6 @@
 <launch>
 
     <include file="$(find com2009_team26)/launch/slam.launch"/>
-    <!-- <node name="navigate" pkg="com2009_team26" type="navigate.py" output="screen"/> -->
+    <node name="navigate" pkg="com2009_team26" type="navigate.py" output="screen"/>
     
 </launch>
