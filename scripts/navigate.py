@@ -228,7 +228,6 @@ class Navigator:
         return int(map_x), int(map_y), index
 
     def get_xy_cost(self, map_info, x, y):
-        
         return self.costmap_data.data[self.world_xy_to_map_indices(map_info, x, y)[2]]
 
     def map_callback(self, data):
@@ -309,23 +308,6 @@ class Navigator:
             # Publish the marker
             self.goals_pub.publish(marker)
 
-    def plot_points(self):
-        # Extract coordinates for plotting
-        free_space_coords = self.free_space_list
-        # centroids = np.array(self.centroids)
-        centroids = self.reduced_free_space_list
-
-        # Create a plot
-        plt.figure(figsize=(10, 6))
-        plt.scatter(free_space_coords[:, 0], free_space_coords[:, 1], c='blue', label='Free Space')
-        plt.scatter(centroids[:, 0], centroids[:, 1], c='red', marker='x', s=100, label='Centroids')
-        plt.title('Map Free Space and Centroids')
-        plt.xlabel('X coordinate')
-        plt.ylabel('Y coordinate')
-        plt.legend()
-        plt.grid(True)
-        plt.pause(0.1)
-
     def remove_close_points(self, points, threshold=0.5):
         if points is None:
             return np.empty((0, points.shape[1]), dtype=points.dtype)
@@ -367,7 +349,6 @@ class Navigator:
             msg.pose.pose.orientation.w)
         euler = tf.transformations.euler_from_quaternion(quaternion)
         self.theta = euler[2]
-        
 
     def send_goal_and_wait(self, goal, duration):
 
@@ -411,10 +392,9 @@ class Navigator:
                 break
             else:
                 pass
-                rospy.logerr(rospy.Time.now().secs-self.time)
+                # rospy.logerr(rospy.Time.now().secs-self.time)
             
             rospy.sleep(1.0)
-
 
     def execute_trajectory(self):
         self.update_trajectory_thread.start()
@@ -500,7 +480,4 @@ class Navigator:
 if __name__ == '__main__':
 
     navigator = Navigator()
-    # navigator.execute_trajectory()
     rospy.spin()
-    # for w in navigator.waypoints:
-    #     print("x= %.3f, y= %.3f"%(w[0], w[1]))

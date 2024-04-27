@@ -115,14 +115,6 @@ class ColourDetector:
                         cv2.imwrite(self.path + 'task4_beacon.jpg', self.cv_image)
                     cv2.rectangle(self.cv_image, (x, y), (x+w, y+h), (100, 255, 255), 2)
 
-        # cv2.imshow('RED', self.red_result)
-        # cv2.imshow('GREEN', self.green_result)
-        # cv2.imshow('BLUE', self.blue_result)
-        
-        # cv2.imshow('RGB', self.cv_image)
-
-        # cv2.waitKey(1)
-
 if __name__ == '__main__':
     try:
         cd = ColourDetector()
