@@ -32,7 +32,7 @@ To get started with this project, follow these steps:
    ```
 
 2. **Install Dependencies**:
-   Ensure you have ROS and Gazebo installed. Follow the instructions [here](http://wiki.ros.org/ROS/Installation) for ROS installation and [here](http://gazebosim.org/tutorials?tut=install_ubuntu) for Gazebo. You also need to install tuos_ros package [here] (https://github.com/tom-howard/tuos_ros.git)
+   Ensure you have ROS and Gazebo installed. Follow the instructions [here](http://wiki.ros.org/ROS/Installation) for ROS installation and [here](http://gazebosim.org/tutorials?tut=install_ubuntu) for Gazebo. You also need to install tuos_ros package [here](https://github.com/tom-howard/tuos_ros.git)
 
 3. **Run the Simulation**:
    Launch the simulation environment:
