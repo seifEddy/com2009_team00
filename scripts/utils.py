@@ -45,7 +45,7 @@ if __name__ == '__main__':
 
     # Concatenate all points into a single array
     # points = np.concatenate([group1_points, group2_points, group3_points])
-    points = np.loadtxt('/home/seghiri/abdulla_ws/src/com2009_team26/scripts/array', dtype=float)
+    points = np.loadtxt('/home/seghiri/abdulla_ws/src/com2009_team00/scripts/array', dtype=float)
     input(str(points.shape[0]))
     reduced_points = reduce_points(points, 0.01, 10)
     input(str(reduced_points.shape[0]))

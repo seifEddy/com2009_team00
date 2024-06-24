@@ -469,7 +469,7 @@ class Navigator:
             rospy.loginfo('NOT INSIDE A ROOM: Moving to the next goal')
 
     def save_map(self, filename='task4_map'):
-        path = rp.get_path('com2009_team26') + '/maps/'
+        path = rp.get_path('com2009_team00') + '/maps/'
         command = f"cd {path} && rosrun map_server map_saver -f {filename}"
         try:
             output = subprocess.check_output(command, shell=True)

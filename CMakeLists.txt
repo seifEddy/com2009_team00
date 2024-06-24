@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.0.2)
-project(com2009_team26)
+project(com2009_team00)
 
 ## Compile as C++11, supported in ROS Kinetic and newer
 # add_compile_options(-std=c++11)
@@ -106,7 +106,7 @@ find_package(OpenCV REQUIRED)
 ## DEPENDS: system dependencies of this project that dependent projects also need
 catkin_package(
 #  INCLUDE_DIRS include
-#  LIBRARIES com2009_team26
+#  LIBRARIES com2009_team00
 #  CATKIN_DEPENDS cvbridge opencv roscpp rospy
 #  DEPENDS system_lib
 )
@@ -125,7 +125,7 @@ include_directories(
 
 ## Declare a C++ library
 # add_library(${PROJECT_NAME}
-#   src/${PROJECT_NAME}/com2009_team26.cpp
+#   src/${PROJECT_NAME}/com2009_team00.cpp
 # )
 
 ## Add cmake target dependencies of the library
