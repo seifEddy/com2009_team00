@@ -32,12 +32,12 @@ To get started with this project, follow these steps:
    ```
 
 2. **Install Dependencies**:
-   Ensure you have ROS and Gazebo installed. Follow the instructions [here](http://wiki.ros.org/ROS/Installation) for ROS installation and [here](http://gazebosim.org/tutorials?tut=install_ubuntu) for Gazebo. You also need to install tuos_ros package [here](https://github.com/tom-howard/tuos_ros.git)
+   Ensure you have ROS and Gazebo installed. Follow the instructions [here](http://wiki.ros.org/ROS/Installation) for ROS installation and [here](http://gazebosim.org/tutorials?tut=install_ubuntu) for Gazebo. You also need to install tuos_ros package [here](https://github.com/tom-howard/tuos_ros.git). Finally, set the Turtlebot3_model environment variable to waffle for instance. 
 
 3. **Run the Simulation**:
    Launch the simulation environment:
    ```bash
-   roslaunch com2009_simulation task4.launch
+   roslaunch com2009_simulations task4.launch
    ```
    and start the TurtleBot3 exploration:
    ```bash
